@@ -1,0 +1,78 @@
+/* Todo.css */
+
+  
+.bold {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .bold h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #171717; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .bold img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 5%;
+    margin-top: 8%;
+    border-radius: 20px;
+  }
+  
+  .bb {
+    margin-top: 10px;
+    display: block;
+    margin-top: 2%;
+    margin-left: 40%;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #f06311, #db9a4f);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .bb:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #db9a4f, #f06311);
+    box-shadow: 0 8px 20px #f06311;
+  }
+  
+  .cc {
+    text-decoration: none;
+    color: inherit;
+  }
+  @media (max-width: 768px) {
+    
+    .bold {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px; 
+    }
+    .bold img {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .bold h1 {
+      margin-left: 0;
+      text-align: center;
+      font-size: 2rem; 
+    }
+  }
+  @media (max-width: 480px) {
+    .bold h1 {
+      font-size: 1.5rem; 
+    }
+  }

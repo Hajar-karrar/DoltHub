@@ -1,0 +1,120 @@
+.hii {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    padding-top: 3%;
+    background-color: #ecf2fc;
+  }
+  
+  .hii .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff531b ;
+    padding-right: 10%;
+    padding-left: 3%;
+  }
+  
+  .hii nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+  }
+  
+ .theme-toggle img {
+    cursor: pointer;
+    width: 30px;
+    margin-right: 35px;
+    margin-left: 20px;
+  }
+
+  body.dark-mode {
+    background-color: black;
+    color: #ecf2fc;
+}
+
+body.dark-mode .hii {
+    background-color: black;
+}
+
+body.dark-mode .nav-links a {
+    color: #ecf2fc;
+}
+body.dark-mode h1{
+  color: #dde5f3;
+}
+
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  .hii nav a:hover{
+    color: #ff531b;
+  }
+
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #212121;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+  
+@media screen and (max-width: 768px) {
+  .hamburger {
+      display: flex;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #ecf2fc;
+      width: 40%;
+      height: calc(100vh - 60px);
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      overflow-y: auto;
+      z-index: 1000;
+  }
+
+  .nav-links.open {
+      transform: translateX(0);
+  }
+
+  .nav-links a {
+      padding: 15px;
+      text-align: center;
+      display: block;
+  }
+  body.dark-mode .nav-links{
+    flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: black;
+      width: 40%;
+      height: calc(100vh - 60px);
+      z-index: 1000;
+      color: #ecf2fc;
+  }
+  body.dark-mode .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+}
