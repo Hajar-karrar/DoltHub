@@ -6,12 +6,15 @@ import Calcul from './Calcul';
 import AllList from './AllListe';
 import Api from './Api';
 import Todo from './Todo';
+import AllControl from './AllControl';
 import { LanguageProvider } from "./LanguageContext";
 function App() {
 
   const location = useLocation();
-  const hideNavPaths = ["/calcul", "/list", "/api"];
-  const showNav = !hideNavPaths.includes(location.pathname);
+  
+  const hideNavPaths = ['/list', '/calcul' ,"/api"];
+  const showNav =
+    !hideNavPaths.includes(location.pathname) && !location.pathname.startsWith('/control');
 
 
   return (
@@ -25,6 +28,7 @@ function App() {
           <Route path="/list" element={<AllList/>}/>
           <Route path="/api" element={<Api/>}/>
           <Route path="/todo" element={<Todo/>}/>
+          <Route path="/control/*" element={<AllControl/>}/>
       </Routes>
      
     </LanguageProvider>

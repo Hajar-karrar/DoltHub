@@ -4,6 +4,7 @@ import "./Home.css";
 
 export default function Home() {
   const { translations, toggleLanguage } = useContext(LanguageContext);
+  
 
   return (
     <div className="bo">

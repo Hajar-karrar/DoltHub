@@ -59,16 +59,31 @@
     .bold {
       flex-direction: column;
       align-items: center;
-      padding: 10px; 
+      padding: 30px; 
     }
     .bold img {
       width: 100%;
-      margin-top: 20px;
+      margin-top: 50px;
     }
     .bold h1 {
       margin-left: 0;
       text-align: center;
       font-size: 2rem; 
+      margin-top: 10%;
+    }
+    .bb {
+      display: block;
+      margin-top: 7%;
+      margin-left: 35%;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #f06311, #db9a4f);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
     }
   }
   @media (max-width: 480px) {

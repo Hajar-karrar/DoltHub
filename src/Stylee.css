@@ -58,11 +58,13 @@
     outline: none;
     background: #f9fafb;
     transition: all 0.3s ease;
+    color: black;
 }
 .input:focus {
     border-color: #3498db;
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
     background: #ffffff;
+    color: black;
 }
 .btn1{
     background: linear-gradient(135deg, #6a11cb, #2575fc);
