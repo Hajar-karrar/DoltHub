@@ -7,7 +7,9 @@ import AllList from './AllListe';
 import Api from './Api';
 import Todo from './Todo';
 import AllControl from './AllControl';
+import NotFound from './NotFound';
 import { LanguageProvider } from "./LanguageContext";
+import ThemeWrapper from './ThemeWrapper';
 function App() {
 
   const location = useLocation();
@@ -22,6 +24,7 @@ function App() {
       {showNav && <Header />}
       <LanguageProvider>
      
+      <ThemeWrapper>
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/calcul' element={<Calcul/>}/>
@@ -29,7 +32,9 @@ function App() {
           <Route path="/api" element={<Api/>}/>
           <Route path="/todo" element={<Todo/>}/>
           <Route path="/control/*" element={<AllControl/>}/>
+          <Route path="*" element={<NotFound/>}/>
       </Routes>
+      </ThemeWrapper>
      
     </LanguageProvider>
     </div>

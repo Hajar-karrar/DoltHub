@@ -11,7 +11,7 @@ export default function Home() {
       <div className="Home">
         <div className="info">
         <h1 className='tit'>Welcom <span>To</span> DoltHup</h1>
-          <p className="par">{translations.paragraph} <br /> {translations.par2}</p>
+          <p className="par">{translations.paragraph} <br /> {translations.par2} <br />{translations.par3}</p>
           <div className="language-select">
             <select
               onChange={(e) => toggleLanguage(e.target.value)}

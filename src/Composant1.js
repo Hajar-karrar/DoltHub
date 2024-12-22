@@ -27,10 +27,10 @@ const Composant1 = () => {
   return (
     <div className="ap">
         <div className="b">
-      <h1 className="hajar">Gestion Voitures</h1>
+      <h1 className="hajar"> Car Management</h1>
       <form onSubmit={handleSubmit} className="ff">
         <div>
-          <label className="ll">Matricule:</label><br />
+          <label className="ll">Registration number:</label><br />
           <input
           className="in"
             type="text"
@@ -39,7 +39,7 @@ const Composant1 = () => {
           />
         </div>
         <div>
-          <label className="ll">Marque:</label> <br />
+          <label className="ll">Brand:</label> <br />
           <input
           className="in"
             type="text"
@@ -48,7 +48,7 @@ const Composant1 = () => {
           />
         </div>
         <div>
-          <label className="ll">Date de mise en circulation:</label><br />
+          <label className="ll">Date of entry into circulation:</label><br />
           <input
           className="in"
             type="date"
@@ -57,7 +57,7 @@ const Composant1 = () => {
           />
         </div>
         <div>
-          <label className="ll">Couleur:</label> <br />
+          <label className="ll">Color:</label> <br />
           <input
           className="in"
             type="text"
@@ -65,17 +65,17 @@ const Composant1 = () => {
             onChange={(e) => setCouleur(e.target.value)}
           />
         </div>
-        <button type="submit" className="bhajar">Confirmer</button>
+        <button type="submit" className="bhajar">Confirm</button>
       </form>
 
       {recap && (
         <div className="recap-container">
-        <h2 className="hhh2">Récapitulatif des informations :</h2>
+        <h2 className="hhh2">Summary of information:</h2>
         <ul className="ull">
-          <li className="lii">Matricule: {recap.matricule}</li>
-          <li className="lii">Marque: {recap.marque}</li>
-          <li className="lii">Date Mise en circulation: {recap.dateMiseEnCirculation}</li>
-          <li className="lii">Couleur: {recap.couleur}</li>
+          <li className="lii">Registration number: {recap.matricule}</li>
+          <li className="lii">Brand: {recap.marque}</li>
+          <li className="lii">Date of entry into circulation: {recap.dateMiseEnCirculation}</li>
+          <li className="lii">Color: {recap.couleur}</li>
         </ul>
       </div>
       )}

@@ -19,7 +19,7 @@ export default function FormulaireProfile({ ajouterProfil }) {
     return (
         <form onSubmit={handleSubmit} className="my-4 form">
             <div className="form-group">
-                <label className='label'>Nom :</label>
+                <label className='label'>Name :</label>
                 <input 
                     type="text"
                     value={nom}
@@ -28,7 +28,7 @@ export default function FormulaireProfile({ ajouterProfil }) {
                 />
             </div>
             <div className="form-group">
-                <label className='label'>Âge :</label>
+                <label className='label'>Age :</label>
                 <input
                     type="number"
                     value={age}
@@ -37,7 +37,7 @@ export default function FormulaireProfile({ ajouterProfil }) {
                 />
             </div>
             <div className="form-group">
-                <label className='label'>Profession :</label>
+                <label className='label'>Occupation :</label>
                 <input
                     type="text"
                     value={profession}
@@ -55,7 +55,7 @@ export default function FormulaireProfile({ ajouterProfil }) {
                 />
             </div>
             <button type="submit" className="btn btn-primary mt-3 btn1">
-                Ajouter Profil
+            Add Profile
             </button>
         </form>
     );

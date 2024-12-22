@@ -4,13 +4,13 @@ import "./Composant2.css"
 export default function Composant2({ salaries }) {
   return (
     <div className="container2">
-      <h2 className="h2hajar">Liste des Salariés</h2>
+      <h2 className="h2hajar">List of Employees</h2>
       <table border="1" >
         <thead>
           <tr>
-            <th>Nom</th>
-            <th>Prénom</th>
-            <th>Fonction</th>
+            <th>Surname</th>
+            <th>First Name</th>
+            <th>Function</th>
             <th>Service</th>
           </tr>
         </thead>

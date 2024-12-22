@@ -53,15 +53,15 @@ const Composant3 = () => {
 
   return (
     <div className="containerr mt-4">
-      <h1 className="h4">Recherche par Service</h1>
+      <h1 className="h4">Search by Service</h1>
       <div className="row mb-3">
         <div className="col-md-8 offset-md-2">
-          <label htmlFor="serviceSearch" className="ll2">Nom du service</label>
+          <label htmlFor="serviceSearch" className="ll2">Name of service</label>
           <input
             type="text"
             id="serviceSearch"
             className="form-controll"
-            placeholder="Entrer le nom du service"
+            placeholder="Enter the name of the service"
             value={serviceSearch}
             onChange={handleInputChange}
           />
@@ -69,7 +69,7 @@ const Composant3 = () => {
       </div>
       <div className="text-center">
         <button className="btnn" onClick={handleSearch}>
-          Rechercher
+        Research
         </button>
       </div>
       <div className="mt-4">
@@ -77,8 +77,8 @@ const Composant3 = () => {
           <table className="">
             <thead>
               <tr>
-                <th>Nom</th>
-                <th>Prénom</th>
+                <th>Surname</th>
+                <th>First Name</th>
               </tr>
             </thead>
             <tbody>
@@ -93,8 +93,8 @@ const Composant3 = () => {
         ) : (
           <p className="text22">
             {serviceSearch.trim() === ''
-              ? 'Entrez un nom de service pour effectuer une recherche.'
-              : 'Aucun salarié trouvé pour ce service.'}
+              ? 'Enter a service name to search.'
+              : 'No employees found for this service.'}
           </p>
         )}
       </div>

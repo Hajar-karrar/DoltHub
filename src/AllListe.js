@@ -24,7 +24,7 @@ export default function AllList() {
     <div className='bodyy'>
           
         <div className='app'>
-      <h1 className="text-center my-4 h11">Liste des Profils</h1>
+      <h1 className="text-center my-4 h11">List of Profiles</h1>
       <FormulaireProfile ajouterProfil={ajouterProfil} />
       <ListeProfils profils={profils} supprimerProfil={supprimerProfil} />
     </div>
