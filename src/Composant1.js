@@ -71,11 +71,11 @@ const Composant1 = () => {
       {recap && (
         <div className="recap-container">
         <h2 className="hhh2">Summary of information:</h2>
-        <ul className="ull">
-          <li className="lii">Registration number: {recap.matricule}</li>
-          <li className="lii">Brand: {recap.marque}</li>
-          <li className="lii">Date of entry into circulation: {recap.dateMiseEnCirculation}</li>
-          <li className="lii">Color: {recap.couleur}</li>
+        <ul className="ulll">
+          <li className="liii">Registration number: {recap.matricule}</li>
+          <li className="liii">Brand: {recap.marque}</li>
+          <li className="liii">Date of entry into circulation: {recap.dateMiseEnCirculation}</li>
+          <li className="liii">Color: {recap.couleur}</li>
         </ul>
       </div>
       )}

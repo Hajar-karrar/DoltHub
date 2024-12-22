@@ -93,12 +93,12 @@
   }
   
   
-  .ull {
+  .ulll {
     list-style-type: none;
     padding: 0;
   }
   
-  .lii {
+  .liii {
     font-size: 16px;
     margin-bottom: 12px;
     color: #555;
@@ -107,7 +107,7 @@
   @media screen and (max-width: 768px) {
     .ff {
         background: #ffffff;
-        width: 400px;
+        width: 350px;
         margin-left: 5%;
         border: 1px solid #dcdfe3;
         border-radius: 12px;
@@ -145,7 +145,7 @@
         width: 450px;
         margin-left: 8%;
         margin-bottom: 2%;
-        width: 350px;
+        width: 300px;
       
     }
   
