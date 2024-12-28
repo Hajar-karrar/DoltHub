@@ -28,7 +28,6 @@ export default function Header() {
                 <li className='lii'> <Link to="/list">List-Profiles</Link></li>
                 <li className='lii'><Link to="/api">API-Country</Link></li>
                 <li className='lii'><Link to="/todo">To-Do List</Link></li>
-                <li className='lii'><Link to="/control">Control</Link></li>
                </ul>
                <ul className='nav-menu'>
                 <li className='lii hand ' ><Link to="/">Home</Link></li>
@@ -36,7 +35,7 @@ export default function Header() {
                 <li className='lii hand'> <Link to="/list">List-Profiles</Link></li>
                 <li className='lii hand'><Link to="/api">API-Country</Link></li>
                 <li className='lii hand'><Link to="/todo">To-Do List</Link></li>
-                <li className='lii hand'><Link to="/control">Control</Link></li>
+
                 
                </ul>
             </nav>

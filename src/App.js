@@ -6,7 +6,6 @@ import Calcul from './Calcul';
 import AllList from './AllListe';
 import Api from './Api';
 import Todo from './Todo';
-import AllControl from './AllControl';
 import NotFound from './NotFound';
 import { LanguageProvider } from "./LanguageContext";
 import ThemeWrapper from './ThemeWrapper';
@@ -31,7 +30,6 @@ function App() {
           <Route path="/list" element={<AllList/>}/>
           <Route path="/api" element={<Api/>}/>
           <Route path="/todo" element={<Todo/>}/>
-          <Route path="/control/*" element={<AllControl/>}/>
           <Route path="*" element={<NotFound/>}/>
       </Routes>
       </ThemeWrapper>
